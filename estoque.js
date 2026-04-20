@@ -1,0 +1,14 @@
+const produtos = [
+  { nome: "Teclado", preco: 121.99, estoque: 15 },
+  { nome: "Monitor Gamer AOC", preco: 599.99, estoque: 0 },
+  { nome: "Mouse Sem Fio", preco: 34.50, estoque: 1 },
+  { nome: "Processador AMD Ryzen 7", preco: 1299.90, estoque: 0 },
+  { nome: "Módulo de memória 16GB DDR5", preco: 1180.90, estoque: 8 }
+];
+
+console.log("Produtos em Estoque:");
+produtos.forEach(produto => {
+  if (produto.estoque > 0) {
+    console.log(`- ${produto.nome}: ${produto.estoque} unidades disponíveis.`);
+  }
+});
